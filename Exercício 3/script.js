@@ -28,7 +28,7 @@ function idades() {
     Faixa 1 (até 15 anos): ${faixa1}
     Faixa 2 (16 - 30 anos): ${faixa2}
     Faixa 3 (31 - 45 anos): ${faixa3}
-    Faixa 4 (46 - 70 anos): ${faixa4}
+    Faixa 4 (46 - 60 anos): ${faixa4}
     Faixa 5 (acima de 60 anos): ${faixa5}
     Percentual até 15 anos: ${perc1}%
     Percentual acima de 60 anos: ${perc5}%`);
