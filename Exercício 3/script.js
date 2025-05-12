@@ -7,7 +7,6 @@ function idade() {
     let faixa3 = 0; // De 31 a 45
     let faixa4 = 0; // De 46 a 60
     let faixa5 = 0; // Acima de 60
-
     while (conta <= 8) {
         idade = Number(prompt(`Informe a idade do indivíduo ${conta}:`));
         if (idade <= 15) {
@@ -26,8 +25,11 @@ function idade() {
     let perc1 = (faixa1 / total * 100).toFixed(1);
     let perc5 = (faixa5 / total * 100).toFixed(1);
     alert(`Total de pessoas: ${total}
-        Faixa 1 (até 15 anos): ${faixa1}
-        Faixa 5 (acima de 60 anos): ${faixa5}
-        Percentual até 15 anos: ${perc1}%
-        Percentual acima de 60 anos: ${perc5}%`);
+    Faixa 1 (até 15 anos): ${faixa1}
+    Faixa 2 (16 - 30 anos): ${faixa2}
+    Faixa 3 (31 - 45 anos): ${faixa3}
+    Faixa 4 (46 - 70 anos): ${faixa4}
+    Faixa 5 (acima de 60 anos): ${faixa5}
+    Percentual até 15 anos: ${perc1}%
+    Percentual acima de 60 anos: ${perc5}%`);
 }
