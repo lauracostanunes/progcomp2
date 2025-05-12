@@ -18,12 +18,12 @@ function idades() {
         else if (idade >= 46 && idade <= 60) {
             faixa4++; }
             else {
-            faixa5++;}
+            faixa5++; }
         total++;
         conta++;
     }
-    let perc1 = (faixa1 / total * 100).toFixed(1);
-    let perc5 = (faixa5 / total * 100).toFixed(1);
+    let perc1 = (faixa1 / 8 * 100).toFixed(1);
+    let perc5 = (faixa5 / 8 * 100).toFixed(1);
     alert(`Total de pessoas: ${total}
     Faixa 1 (até 15 anos): ${faixa1}
     Faixa 2 (16 - 30 anos): ${faixa2}
