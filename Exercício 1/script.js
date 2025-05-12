@@ -1,21 +1,19 @@
 function grupos() {
-    let grupo = 1;
-    while (grupo <= 5) {
-        let valores = [];
-        let letra = ['A', 'B', 'C', 'D'];
-        let contador = 0;
-        while (contador < 4) {
-            let valor = Number(prompt(`Grupo ${grupo} - Informe o valor ${letra[contador]}:`));
-            valores.push(valor);
-            contador++;
-        }
-        let ordemLida = valores.join(', ');
-        let ordemCrescente = [...valores].sort((a, b) => a - b).join(', ');
-        let ordemDecrescente = [...valores].sort((a, b) => b - a).join(', ');
-        alert(`Grupo ${grupo}:
-            Ordem lida: ${ordemLida}
-            Crescente: ${ordemCrescente}
-            Decrescente: ${ordemDecrescente}`);
-        grupo++;
+    let conta = 1
+    let grupo = A, B, C, D, AUX
+    A = Number(prompt('Informe o valor de A'))
+    B = Number(prompt('Informe o valor de B'))
+    C = Number(prompt('Informe o valor de C'))
+    D = Number(prompt('Informe o valor de D'))
+    while (conta <= 3) {
+        if (A>B) {
+            AUX = A; B=A; B=AUX }
+        if (B>C) {
+            AUX = B; B=C; C=AUX }
+        if (C>D) {
+                AUX = C; C=D; D=AUX }
+        conta++
     }
+    alert ('Ordem crescente ${A} ${B} ${C} ${D}')
+    alert ('Ordem decrescente ${D} ${C} ${B} {A}')
 }
