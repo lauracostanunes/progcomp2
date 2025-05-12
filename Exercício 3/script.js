@@ -9,13 +9,13 @@ function idades() {
     let faixa5 = 0; // Acima de 60
     while (conta <= 8) {
         idade = Number(prompt(`Informe a idade do indivíduo ${conta}:`));
-        if (idade <= 15) {
+        if (idade >= 0 && idade <= 15) {
             faixa1++; } 
-        else if (idade <= 30) {
+        else if (idade >= 16 && idade <= 30) {
             faixa2++; } 
-        else if (idade <= 45) {
+        else if (idade >= 31 && idade <= 45) {
             faixa3++; }
-        else if (idade <= 60) {
+        else if (idade >= 46 && idade <= 60) {
             faixa4++; }
             else {
             faixa5++;}
