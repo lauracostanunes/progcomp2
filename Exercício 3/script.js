@@ -1,4 +1,4 @@
-function idade() {
+function idades() {
     let idade;
     let conta = 1;
     let total = 0;
