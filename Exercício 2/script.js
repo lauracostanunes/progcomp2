@@ -1,6 +1,6 @@
 function lucro() {
     let preco = 5.0;
-    let custoFixo = 200.0;
+    const custoFixo = 200.0;
     let pessoas = 120;
     let lucroMaximo = 0;
     let melhorPreco = 0;
