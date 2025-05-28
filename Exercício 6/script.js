@@ -1,28 +1,35 @@
 function loja(){
-    let V = 0, P = 0, valor, cont, opcao, valorTotal
-    for(cont = 1; cont <= 15; cont++){
-        opcao = prompt("V = À vista\nP = A prazo")
-            if(opcao != "V" && opcao != "v" && opcao != "P" && opcao != "p"){
-                alert("Informe uma opção válida")
-                cont--
-                continue
-            }
-        valor = Number(prompt("Informe o valor da compra:"))
-            if(valor <= 0){
-                alert("Informe um valor válido")
-                cont--
-                continue
-            }
-        if(opcao === "V" || opcao === "v"){
-            V+= valor
-        } else{
-            P+= valor
-        }
+ let totalVista = 0, totalPrazo = 0, contador = 1
+while (contador <= 15) {
+  let codigo = prompt("Transação " + contador + ": Digite o código (V para à vista, P para a prazo):");
+  if (codigo === "V" || codigo === "v") {
+    let valor = prompt("Digite o valor da compra à vista:");
+    if (valor != "" && valor * 1 >= 0) {
+      totalVista = totalVista + (valor * 1);
+      contador++
+    } else {
+      alert("Valor inválido. Digite um número positivo.");
     }
-    valorTotal = V + P
-    alert(`Valor à vista: R$${V}\n`
-        + `Valor a prazo: R$${P}\n`
-        + `Valor das compras: R$${valorTotal}\n`
-        + `Valor da primeira prestação a prazo: R$${(P/3).toFixed(2)}`
-    )
+    } 
+else if (codigo === "P" || codigo === "p") {
+    let valor = prompt("Digite o valor da compra a prazo:");
+    if (valor != "" && valor * 1 >= 0) {
+      totalPrazo = totalPrazo + (valor * 1);
+      contador = contador + 1;
+    } else {
+      alert("Valor inválido. Digite um número positivo.");
+    }
+  } else {
+    alert("Código inválido. Digite apenas V ou P.");
+  }
+}
+let totalGeral = totalVista + totalPrazo;
+let primeiraParcela = totalPrazo / 3;
+alert(
+  "Resumo das compras:\n" +
+  "Total à vista: R$ " + totalVista.toFixed(2) + "\n" +
+  "Total a prazo: R$ " + totalPrazo.toFixed(2) + "\n" +
+  "Total: R$ " + totalGeral.toFixed(2) + "\n" +
+  "Primeira parcela das compras a prazo: R$ " + primeiraParcela.toFixed(2)
+);
 }
