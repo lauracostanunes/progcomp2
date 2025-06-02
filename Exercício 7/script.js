@@ -31,6 +31,6 @@ function ex7(){
             }
         }
         alert(`Quantidade de pessoas com mais de 50 anos: ${qntd50mais}
-        Média da altura das pessoas com idades entre 10 e 20 anos: ${somaAltura/qntIdade1020}
-        Porcentagem de pessoas com menos de 40kg: ${qntd40menos/5*100}`)
+    Média da altura das pessoas com idades entre 10 e 20 anos: ${somaAltura/qntIdade1020}
+    Porcentagem de pessoas com menos de 40kg: ${qntd40menos/5*100}%`)
     }
