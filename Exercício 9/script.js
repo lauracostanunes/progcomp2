@@ -5,17 +5,17 @@ function ex9() {
     let qntdTotal = 7;
     let qntdAltura190 = 0;
     let qntdIdade1030Altura190 = 0;
-    for (let conta = 1; conta <= qntdTotal; conta++) {
+    for (let i = 1; i <= qntdTotal; i++) {
         do {
-            idade = Number(prompt(`Informe a idade ${conta}:`));
+            idade = Number(prompt(`Informe a idade ${i}:`));
         } while (isNaN(idade) || idade <= 0);
 
         do {
-            peso = Number(prompt(`Informe o peso (kg) ${conta}:`));
+            peso = Number(prompt(`Informe o peso (kg) ${i}:`));
         } while (isNaN(peso) || peso <= 0);
 
         do {
-            altura = Number(prompt(`Informe a altura (cm) ${conta}:`));
+            altura = Number(prompt(`Informe a altura (cm) ${i}:`));
         } while (isNaN(altura) || altura <= 0);
 
         if (peso > 90 && altura < 150) {
