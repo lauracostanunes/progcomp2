@@ -3,17 +3,20 @@ function ex1() {
     for (let i = 0; i < 6; i++) {
         vet.push(Number(prompt(`Informe o ${i+1}º número`)))
     }
-    let par = 0, impar = 0
+    // fazer cálculos
+    let pares = [], impares = []
     for (let i = 0; i < 6; i++) {
         if (vet[i]%2 == 0) { // elemento é par
-            par++
+            pares.push(vet[i])
         }
         else {
-            impar++
+            impares.push(vet[i])
         }
     }
+    alert(`
+    ${pares.length} são pares: ${pares}
+    ${impares.length} são ímpares: ${impares}`)
 }
-
 
 // i = posição do vetor
 // v[i] = elemento na posição i
