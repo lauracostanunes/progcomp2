@@ -1,19 +1,17 @@
 function ex2() {
-    let vet = []
+    let vet = [] // Declarar vetor
+    // Entrada de dados
     for (let i = 0; i < 10; i++) {
         vet.push(Number(prompt(`Informe o ${i+1}º número`)))
     }
-    // fazer cálculos
-    let pares = [], impares = []
+    // Alterar o vetor conforme o exercício
     for (let i = 0; i < 6; i++) {
-        if (vet[i]%2 == 0) { // elemento é par
-            pares.push(vet[i] + 10)
+        if (i%2 == 0) { // Posição par
+            vet[i] = vet[i] + 10
         }
         else {
-            impares.push(vet[i] * 5)
+            vet[i] = vet[i] * 5
         }
     }
-    alert(`
-    Soma pares: ${pares}
-    Multiplicação ímpares: ${impares}`)
+    alert(`${vet}`)
 }
